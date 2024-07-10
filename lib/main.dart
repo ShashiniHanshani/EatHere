@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:online_food_ordering_app/pages/food_page/popular_food.dart';
 import 'package:online_food_ordering_app/pages/food_page/recommended_page.dart';
 import 'package:online_food_ordering_app/pages/home/main_food_page.dart';
 
@@ -20,8 +21,9 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: MainFoodPage(),
-      //home: RecommendedPage(),
+      //home: MainFoodPage(),
+      home: RecommendedPage(),
+      //home: PopularFood(),
     );
   }
 }

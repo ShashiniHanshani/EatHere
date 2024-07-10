@@ -20,11 +20,11 @@ class _MainFoodPageLargeContainerState
     return Stack(
       children: [
         Container(
-          margin: EdgeInsets.fromLTRB(10, 10, 10, 0),
+          margin: const EdgeInsets.fromLTRB(10, 10, 10, 0),
           height: 220,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(30),
-            image: DecorationImage(
+            image: const DecorationImage(
               image: AssetImage("assets/images/food_image2.webp"),
               fit: BoxFit.fill,
             ),
@@ -33,13 +33,13 @@ class _MainFoodPageLargeContainerState
         Align(
           alignment: Alignment.bottomCenter,
           child: Container(
-            margin: EdgeInsets.only(bottom: 20),
+            margin: const EdgeInsets.only(bottom: 20),
             height: 120,
             width: 300,
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(30),
                 color: Colors.white,
-                boxShadow: [
+                boxShadow: const [
                   BoxShadow(
                     color: Color.fromARGB(255, 241, 239, 239),
                     blurRadius: 0.8,
@@ -60,18 +60,18 @@ class _MainFoodPageLargeContainerState
                         Wrap(
                           children: List.generate(
                             5,
-                            (index) => Icon(
+                            (index) => const Icon(
                               Icons.star,
                               color: AppColor.mainColor,
                               size: 18,
                             ),
                           ),
                         ),
-                        SizedBox(width: 10),
+                        const SizedBox(width: 10),
                         SmallText(smallText: "4.5"),
-                        SizedBox(width: 10),
+                        const SizedBox(width: 10),
                         SmallText(smallText: "1287 "),
-                        SizedBox(width: 10),
+                        const SizedBox(width: 10),
                         SmallText(smallText: "comments")
                       ],
                     ),
@@ -84,7 +84,7 @@ class _MainFoodPageLargeContainerState
                         text: "Normal",
                         iconColor: AppColor.iconColor1,
                       ),
-                      IconAndText(
+                      const IconAndText(
                         icon: Icons.location_on,
                         text: "1.7km",
                         iconColor: AppColor.mainColor,

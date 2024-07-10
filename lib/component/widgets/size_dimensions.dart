@@ -34,6 +34,9 @@ class SizeDimensions {
   static double ListViewImage = screenWidth / 3.25;
   static double ListViewText = screenWidth / 3.9;
 
+  //popularfood iamge size
+  static double popularfoodImageSize = screenHeight / 2.18;
+
   static void printScreenHeight() {
     print('Screen Height: $screenWidth');
   }
